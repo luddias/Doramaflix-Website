@@ -1,0 +1,202 @@
+body{
+    font-family: 'Outfit', sans-serif;
+    display: flex;
+
+  }
+
+.bp{
+    background-image: url("https://github.com/luddias/Doramaflix-Website/blob/main/background-business-proposal.png?raw=true");
+
+}
+
+.ey{
+    background-image: url("https://github.com/luddias/Doramaflix-Website/blob/main/img/background-extra-you.png?raw=true");
+    
+}
+
+.bandc{
+    background-image: url("https://github.com/luddias/Doramaflix-Website/blob/main/img/background-badandcrazy.png?raw=true");
+  }
+
+.obs{
+    background-image: url("https://github.com/luddias/Doramaflix-Website/blob/main/img/background-obs.png?raw=true");
+  }
+
+.trw{
+    background-image: url("https://github.com/luddias/Doramaflix-Website/blob/main/img/background-tomorrow.png?raw=true");
+  }
+
+.w{
+    background-image: url("https://github.com/luddias/Doramaflix-Website/blob/main/img/bck-w.png?raw=true");
+  }
+
+
+.fundo{
+    background-color: #6643ff;
+    transition:opacity 0.3s ease-in-out;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+
+}
+
+.conteudo{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+  .cabecalho {
+    display:flex;
+    justify-content: left;
+    align-items: center;
+    padding-top: 30px;
+    padding-left: 100px;
+  }
+  
+  body{
+    color: white;
+  }
+  
+  .logo {
+    width: 180px;
+  }
+
+  main{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+  }
+  
+  .btn-seta{
+    background-color: transparent;
+    width: 40px;
+    height: 50px;
+    border: 0;
+    cursor: pointer;
+    color: white;
+    
+  }
+  
+  .btn-seta img{
+    width: 40px;
+  }
+  
+  .btn-seta.btn-voltar{
+    transform: rotateY(180deg);
+  }
+  
+  .lista-dramas{
+    position: relative;
+    width: 1000px;
+    height: 500px;
+  }
+  
+  .pagina-drama{
+    margin: 20px;
+    display: flex;
+    opacity: 0;
+    flex-direction: row;
+    justify-content: center;
+    position:absolute;
+    align-items: center;
+    width: 100%;
+    height:100%;
+    transition:opacity 0.3s ease-in-out;
+  }
+  
+    .selecionado{
+    opacity: 1;
+    z-index: 2;
+   }
+
+   .fundo-selecionado{
+    opacity: 1;
+   }
+
+  .dados-drama{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 60%;
+    height: 100%;
+    padding: 30px;
+    gap: 5px;
+}
+  
+  .imagem-capa{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 40%;
+    height: 100%;
+  }
+
+  .imagem-capa img{
+    width: 300px;
+    height: auto;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    
+  }
+
+  .titulo-drama{
+    margin-bottom: 10px;
+    font-family: 'Secular One', sans-serif;
+    
+  }
+
+  .sinopse{
+    font-family: 'Kanit', sans-serif;
+    margin-bottom: 10px;
+    text-align: justify;
+  }
+
+  .extras{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    flex-direction: row;
+    gap: 15px;
+    margin-top: 20px;
+  }
+
+  .estrelas{
+    width:150px;
+  }
+
+  .classificacao{
+    border-width: 2px;
+    border-style: solid;
+    border-color: white;
+    padding: 5px;
+  }
+
+  .botao-link{
+    background-color: red;
+    border-radius: 25px;
+    border: 0;
+    cursor: pointer;
+    color: white;
+    width: 350px;
+    height: 50px;
+    border: none;
+    padding: 5px;
+    margin-top: 15px;
+  }
+
+  .botao-link p{
+    font-family: 'Kanit', sans-serif;
+    font-size: 20px;
+    padding: 5px;
+  }
+
+  .botao-link:hover{
+    background-color: #ff4343
+  }
