@@ -200,3 +200,58 @@ body{
   .botao-link:hover{
     background-color: #ff4343
   }
+
+  .tela-inicial{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    z-index: 3;
+    background-color: rgb(15, 15, 15);
+    transition:opacity 0.3s ease-in-out;
+  }
+
+  .tela-inicial h1{
+    font-family: 'Kanit', sans-serif;
+    font-size: 20px;
+    color: white;
+    opacity: 0;
+    animation: fade 5s;
+    animation-delay: 2s;
+  }
+
+  .tela-inicial img{
+    width: 500px;
+    animation-name: grow;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-out;
+    transition: transform .2s;
+    cursor: pointer;
+  }
+
+  @keyframes grow{
+    from {
+      transform: scale(0);
+    }
+    to {
+      transform: scale(1);
+    }
+  }
+
+  @keyframes fade{
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+
+  .tela-inicial img:hover {
+    transform: scale(1.1);
+  }
+
+  .alteracao{
+    opacity: 0;
+    z-index: 0; 
+  }
