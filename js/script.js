@@ -48,5 +48,5 @@ function abertura(){
 function transicao(){
   let pagina=document.getElementById('tela-inicial');
   pagina.style.opacity=0;
-  pagina.classList.add('alteracao');
+  setTimeout(() => {  pagina.classList.add('alteracao');}, 2000);
 }
