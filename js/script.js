@@ -38,3 +38,15 @@ function voltardrama(){
 
   i--;
 }
+
+function abertura(){
+  let texto=document.getElementById('autor');
+  setTimeout(() => {  texto.style.opacity=1; }, 3000);
+
+}  
+
+function transicao(){
+  let pagina=document.getElementById('tela-inicial');
+  pagina.style.opacity=0;
+  pagina.classList.add('alteracao');
+}
